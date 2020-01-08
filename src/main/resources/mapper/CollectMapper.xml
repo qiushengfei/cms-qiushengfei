@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiushengfei.dao.CollectDao">
+	<!-- 查询 -->
+	<select id="select" resultType="Collect">
+		SELECT * FROM cms_collect
+
+	</select>
+	<!-- ID查询 -->
+	<select id="selectById" resultType="Collect">
+		SELECT * FROM cms_collect
+		WHERE id=#{id}
+
+
+	</select>
+	<!--修改 -->
+	<update id="update">
+		UPDATE cms_collect
+		SET
+		text=#{text},url=#{url},created=#{created},user_id=#{user_id}
+		WHERE
+		id=#{id}
+
+	</update>
+	<!-- 添加 -->
+	<insert id="insert">
+		INSERT INTO
+		cms_collect(text,url,created,user_id)VALUES
+		(#{text},#{url},#{created},#{user_id})
+
+	</insert>
+	<!-- 删除 -->
+	<delete id="delete">
+		DELETE FROM cms_collect WHERE id in(${ids})
+
+	</delete>
+
+
+
+
+</mapper>  

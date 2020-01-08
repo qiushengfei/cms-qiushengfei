@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiushengfei.dao.Article_tagDao">
+ <!-- 查询 -->
+	<select id="select" resultType="Article_tag">
+		SELECT * FROM cms_article_vote
+
+
+	</select>
+	 <!-- ID查询 -->
+	<select id="selectById"  resultType="Article_tag">
+	SELECT * FROM cms_article_vote WHERE id=#{id}
+
+
+	</select>
+	 <!--修改-->
+	<update id="update">
+	UPDATE cms_article_vote
+ SET article_id=#{article_id},user_id=#{user_id},option=#{option} 
+WHERE id=#{id}
+
+
+	</update>
+	 <!-- 添加 -->
+	<insert id="insert">
+	INSERT INTO cms_article_vote(article_id,user_id,option)VALUES 
+(#{article_id},#{user_id},#{option})
+
+	</insert>
+	 <!-- 删除 -->
+	<delete id="delete">
+	DELETE FROM cms_article_vote WHERE id in(${ids})
+
+
+	</delete>
+	
+	
+
+
+</mapper>  
