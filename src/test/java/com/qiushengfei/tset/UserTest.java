@@ -8,8 +8,8 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.qiushengfei.dao.UserDao;
-import com.qiushengfei.entity.User;
+import com.qiushengfei.cms.dao.UserDao;
+import com.qiushengfei.cms.entity.User;
 
 public class UserTest {
 

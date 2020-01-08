@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
      "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qiushengfei.dao.CaregoryDao">
+<mapper namespace="com.qiushengfei.cms.dao.CaregoryDao">
 	<!-- 查询 -->
 	<select id="select" resultType="Caregory">
 		SELECT * FROM cms_category

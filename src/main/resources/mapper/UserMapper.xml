@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
      "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qiushengfei.dao.UserDao">
+<mapper namespace="com.qiushengfei.cms.dao.UserDao">
  <!-- 查询 -->
 	<select id="select" resultType="User">
 		SELECT * FROM cms_user
