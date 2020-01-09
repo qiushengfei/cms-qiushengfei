@@ -2,6 +2,10 @@ package com.qiushengfei.cms.entity;
 
 public class Article_tag {
 
+	/**
+	 * 
+	 */
+	
 	/** 文章Id **/
 	private Integer aid;
 	/** 标签Id **/
